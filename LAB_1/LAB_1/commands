@@ -1,0 +1,8 @@
+gcc main.c -o lab1_task1
+./lab1_task1 & lab1_task1_pid=$(echo $!)
+pstree -A -p $lab1_task1_pid
+
+gcc main_task2.c -o lab1_task2
+./lab1_task2 sleep 5
+./lab1_task2 echo Hello teacher!
+./lab1_task2 cat Something
